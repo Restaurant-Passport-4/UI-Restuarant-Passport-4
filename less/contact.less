@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import 'variables';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,12 +52,15 @@ table {
 html {
 	font-size: 62.5%;
 	font-family: 'Permanent Marker';
-	background-color: #ece6dc;
+	background-color: @bg-color;
 }
 
 .form-container {
+	width: 80%;
+	margin: 0% auto;
+
 	.fieldset {
-		border: 0.2rem solid white;
+		border: 0.2rem solid grey;
 	
 		.input-container {
 			displaY: flex;
@@ -67,7 +72,7 @@ html {
 				margin: 1% 0%;
 				padding: 1% 0% 1% 1%;
 				border-radius: 1.8rem;
-				background-color: #ece6dc;
+				background-color: @bg-color;
 				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
 			}
 			.text-input::placeholder {
@@ -75,8 +80,19 @@ html {
 				font-size: 1.6rem;
 				color: grey;
 			}
+
 			.message {
 				height: 15rem;
+			}
+
+			.submit-btn {
+				width: 15%;
+				background-color: @bg-color;
+				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+				border-radius: 1.8rem;
+				position: relative;
+				top: 1.2rem;
+				font-family: 'Permanent Marker';
 			}
 		}
 	
@@ -84,13 +100,16 @@ html {
 			font-size: 2.2rem;
 			text-align: center;
 			padding: 0% 2%;
-			border-top: 0.2rem solid white;
+			border-top: 0.2rem solid grey;
 			border-radius: 1.5rem;
+			font-size: 2rem;
 		}
 	}
 }
 
 footer {
+	margin-top: 3%;
+
 	p {
 		font-size: 1.6rem;
 		text-align: center;
