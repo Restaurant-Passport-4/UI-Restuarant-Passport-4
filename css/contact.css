@@ -137,19 +137,38 @@ html {
 header {
   width: 50%;
   margin: 0% auto;
+  /*
+	.top-line {
+		height: 0.8rem;
+		background-color: white;
+		transform: rotate(-20deg);
+		position: absolute;
+		border-radius: 50%;
+		@media @phone {
+			width: 80%;
+			top: 15%;
+			left: 5%;
+		}
+	}
+	h1 {
+		position: absolute;
+		color: white;
+		font-size: 8rem;
+		top: 15%;
+		text-align: center;
+		width: 50%;
+		transform: rotate(-20deg);
+		@media @phone {
+			font-size: 7rem;
+			width: 100%;
+		}
+	}
+	*/
 }
 @media (max-width: 550px) {
   header {
     width: 100%;
   }
-}
-header h1 {
-  position: absolute;
-  color: white;
-  font-size: 8rem;
-  top: 15%;
-  text-align: center;
-  width: 50%;
 }
 .form-container {
   width: 60%;
@@ -176,6 +195,11 @@ header h1 {
   border-radius: 1.8rem;
   background-color: #ECE6DC;
   box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+}
+@media (max-width: 550px) {
+  .form-container .fieldset .input-container .text-input {
+    margin: 3% 0%;
+  }
 }
 .form-container .fieldset .input-container .text-input::placeholder {
   font-family: 'Permanent Marker';
@@ -218,16 +242,5 @@ footer {
 footer p {
   font-size: 1.6rem;
   text-align: center;
-}
-footer .bar {
-  width: 20%;
-  height: 1.2rem;
-  background-color: black;
-  border-radius: 1.5rem;
-  margin: 2% auto;
-}
-@media (max-width: 550px) {
-  footer .bar {
-    width: 35%;
-  }
+  margin-bottom: 3%;
 }

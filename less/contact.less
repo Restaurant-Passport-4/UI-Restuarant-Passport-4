@@ -65,7 +65,19 @@ header {
 	@media @phone {
 		width: 100%;
 	}
-
+	/*
+	.top-line {
+		height: 0.8rem;
+		background-color: white;
+		transform: rotate(-20deg);
+		position: absolute;
+		border-radius: 50%;
+		@media @phone {
+			width: 80%;
+			top: 15%;
+			left: 5%;
+		}
+	}
 	h1 {
 		position: absolute;
 		color: white;
@@ -73,7 +85,13 @@ header {
 		top: 15%;
 		text-align: center;
 		width: 50%;
+		transform: rotate(-20deg);
+		@media @phone {
+			font-size: 7rem;
+			width: 100%;
+		}
 	}
+	*/
 }
 
 .form-container {
@@ -99,6 +117,9 @@ header {
 				border-radius: 1.8rem;
 				background-color: @bg-color;
 				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+				@media @phone {
+					margin: 3% 0%;
+				}
 			}
 			.text-input::placeholder {
 				font-family: 'Permanent Marker';
@@ -144,16 +165,6 @@ footer {
 	p {
 		font-size: 1.6rem;
 		text-align: center;
-	}
-
-	.bar {
-		width: 20%;
-		height: 1.2rem;
-		background-color: black;
-		border-radius: 1.5rem;
-		margin: 2% auto;
-		@media @phone {
-			width: 35%;
-		}
+		margin-bottom: 3%;
 	}
 }
