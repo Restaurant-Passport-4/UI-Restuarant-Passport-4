@@ -126,14 +126,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  max-width: 100%;
+}
 html {
   font-size: 62.5%;
   font-family: 'Permanent Marker';
   background-color: #ECE6DC;
 }
-.form-container {
-  width: 80%;
+header {
+  width: 50%;
   margin: 0% auto;
+}
+@media (max-width: 550px) {
+  header {
+    width: 100%;
+  }
+}
+header h1 {
+  position: absolute;
+  color: white;
+  font-size: 8rem;
+  top: 15%;
+  text-align: center;
+  width: 50%;
+}
+.form-container {
+  width: 60%;
+  margin: 3% auto 0%;
+}
+@media (max-width: 550px) {
+  .form-container {
+    width: 80%;
+    margin: 8% auto 0%;
+  }
 }
 .form-container .fieldset {
   border: 0.2rem solid grey;
@@ -168,6 +194,11 @@ html {
   top: 1.2rem;
   font-family: 'Permanent Marker';
 }
+@media (max-width: 550px) {
+  .form-container .fieldset .input-container .submit-btn {
+    width: 20%;
+  }
+}
 .form-container .fieldset .title {
   font-size: 2.2rem;
   text-align: center;
@@ -179,6 +210,11 @@ html {
 footer {
   margin-top: 5%;
 }
+@media (max-width: 550px) {
+  footer {
+    margin-top: 10%;
+  }
+}
 footer p {
   font-size: 1.6rem;
   text-align: center;
@@ -189,4 +225,9 @@ footer .bar {
   background-color: black;
   border-radius: 1.5rem;
   margin: 2% auto;
+}
+@media (max-width: 550px) {
+  footer .bar {
+    width: 35%;
+  }
 }

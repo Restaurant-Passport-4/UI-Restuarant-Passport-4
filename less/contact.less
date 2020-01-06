@@ -49,15 +49,40 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	max-width: 100%;
+}
+
 html {
 	font-size: 62.5%;
 	font-family: 'Permanent Marker';
 	background-color: @bg-color;
 }
 
-.form-container {
-	width: 80%;
+header {
+	width: 50%;
 	margin: 0% auto;
+	@media @phone {
+		width: 100%;
+	}
+
+	h1 {
+		position: absolute;
+		color: white;
+		font-size: 8rem;
+		top: 15%;
+		text-align: center;
+		width: 50%;
+	}
+}
+
+.form-container {
+	width: 60%;
+	margin: 3% auto 0%;
+	@media @phone {
+		width: 80%;
+		margin: 8% auto 0%;
+	}
 
 	.fieldset {
 		border: 0.2rem solid grey;
@@ -93,6 +118,9 @@ html {
 				position: relative;
 				top: 1.2rem;
 				font-family: 'Permanent Marker';
+				@media @phone {
+					width: 20%;
+				}
 			}
 		}
 	
@@ -109,6 +137,9 @@ html {
 
 footer {
 	margin-top: 5%;
+	@media @phone {
+		margin-top: 10%;
+	}
 
 	p {
 		font-size: 1.6rem;
@@ -121,5 +152,8 @@ footer {
 		background-color: black;
 		border-radius: 1.5rem;
 		margin: 2% auto;
+		@media @phone {
+			width: 35%;
+		}
 	}
 }
