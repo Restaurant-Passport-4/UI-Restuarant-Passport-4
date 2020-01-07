@@ -63,17 +63,31 @@ html {
 header {
 	width: 60%;
 	margin: 0% auto;
+	@media @phone {
+		width: 100%;
+	}
 
 	.hero-image-container {
 		width: 40%;
 		margin: 0% auto;
+		@media @phone {
+			width: 100%;
+		}
 	}
 
-	h1 {
-		.center-and-size(2.5rem);
-	}
-	p {
-		.center-and-size(2rem);
+	.header-txt-container {
+		@media @phone {
+			width: 85%;
+			margin: 0% auto;
+		}
+
+		h1 {
+			.center-and-size(3rem);
+			margin: 3% 0%;
+		}
+		p {
+			.center-and-size(2rem);
+		}
 	}
 }
 
@@ -83,6 +97,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	@media @phone {
+		margin: 8% auto 0%;
+	}
 
 	.card {
 		width: 25%;

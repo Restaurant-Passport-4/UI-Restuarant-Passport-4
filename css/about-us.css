@@ -138,15 +138,32 @@ header {
   width: 60%;
   margin: 0% auto;
 }
+@media (max-width: 550px) {
+  header {
+    width: 100%;
+  }
+}
 header .hero-image-container {
   width: 40%;
   margin: 0% auto;
 }
-header h1 {
-  font-size: 2.5rem;
-  text-align: center;
+@media (max-width: 550px) {
+  header .hero-image-container {
+    width: 100%;
+  }
 }
-header p {
+@media (max-width: 550px) {
+  header .header-txt-container {
+    width: 85%;
+    margin: 0% auto;
+  }
+}
+header .header-txt-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3% 0%;
+}
+header .header-txt-container p {
   font-size: 2rem;
   text-align: center;
 }
@@ -156,6 +173,11 @@ header p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 550px) {
+  .people-container {
+    margin: 8% auto 0%;
+  }
 }
 .people-container .card {
   width: 25%;
