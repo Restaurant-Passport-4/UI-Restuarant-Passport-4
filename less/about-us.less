@@ -59,3 +59,60 @@ html {
 	font-family: 'Permanent Marker';
 	background-color: @bg-color;
 }
+
+header {
+	width: 60%;
+	margin: 0% auto;
+
+	h1 {
+		.center-and-size(2.5rem);
+	}
+	p {
+		.center-and-size(2rem);
+	}
+}
+
+.people-container {
+	width: 70%;
+	margin: 3% auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.card {
+		width: 25%;
+		margin-bottom: 7%;
+		.center-and-size(@card-txt-size);
+		border: 0.1rem solid white;
+		border-radius: 1.5rem;
+
+		.image-container {
+			padding: 5%;
+		}
+
+		.name {
+			margin-bottom: 5%;
+		}
+
+		.logo-container {
+			display: flex;
+			justify-content: space-between;
+
+			.logo {
+				margin: 5%;
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 5%;
+	@media @phone {
+		margin-top: 10%;
+	}
+
+	p {
+		.center-and-size(1.6rem);
+		margin-bottom: 3%;
+	}
+}
