@@ -184,7 +184,7 @@ header {
   border: 0.2rem solid grey;
 }
 .form-container .fieldset .input-container {
-  displaY: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
