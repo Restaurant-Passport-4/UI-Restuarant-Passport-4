@@ -2,9 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 @import 'variables';
 @import 'mixins';
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -34,7 +34,21 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 * {
 	max-width: 100%;
@@ -46,37 +60,73 @@ html {
 	background-color: @bg-color;
 }
 
-p {
-    font-size: 3rem;
-    font-family: 'Permanent Marker';
-}
-
-
 header {
-
+	width: 100%;
 	margin: 0% auto;
 	@media @phone {
 		width: 100%;
 	}
-    
-    .main-content-top {
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-
-        .homepage-image {
-            width: 100%;
-        }
-
-        .homepage-logo {
-            position: relative;
-            z-index: -1;
-        }
-    }
-
 
 }
 
+.form-container {
+	width: 60%;
+	margin: 3% auto 0%;
+	@media @phone {
+		width: 80%;
+		margin: 8% auto 0%;
+	}
+
+	.fieldset {
+		border: 0.2rem solid grey;
+	
+		.input-container {
+			.column-center-flex();
+	
+			.text-input {
+				width: 80%;
+				margin: 1% 0%;
+				padding: 1% 0% 1% 1%;
+				border-radius: 1.8rem;
+				background-color: @bg-color;
+				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+				@media @phone {
+					margin: 3% 0%;
+				}
+			}
+			.text-input::placeholder {
+				font-family: 'Permanent Marker';
+				font-size: 1.6rem;
+				color: grey;
+			}
+
+			.message {
+				height: 15rem;
+			}
+
+			.submit-btn {
+				width: 15%;
+				background-color: @bg-color;
+				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+				border-radius: 1.8rem;
+				position: relative;
+				top: 1.2rem;
+				font-family: 'Permanent Marker';
+				@media @phone {
+					width: 20%;
+				}
+			}
+		}
+	
+		.title {
+			.center-and-size(2.2rem);
+			padding: 0% 2%;
+			border-top: 0.2rem solid grey;
+			border-radius: 1.5rem;
+			font-size: 2rem;
+		}
+	}
+}
 
 footer {
 	margin-top: 5%;

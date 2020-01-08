@@ -266,25 +266,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 * {
   max-width: 100%;
 }
@@ -293,8 +274,11 @@ html {
   font-family: 'Permanent Marker';
   background-color: #ECE6DC;
 }
+p {
+  font-size: 3rem;
+  font-family: 'Permanent Marker';
+}
 header {
-  width: 50%;
   margin: 0% auto;
 }
 @media (max-width: 500px) {
@@ -305,8 +289,14 @@ header {
 header .main-content-top {
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   width: 100%;
+}
+header .main-content-top .homepage-image {
+  width: 100%;
+}
+header .main-content-top .homepage-logo {
+  position: relative;
+  z-index: -1;
 }
 footer {
   margin-top: 5%;
@@ -522,6 +512,225 @@ header .header-txt-container p {
 }
 .people-container .card .logo-container .logo {
   margin: 5%;
+}
+footer {
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 10%;
+  }
+}
+footer p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Permanent Marker';
+  background-color: #ECE6DC;
+}
+header {
+  width: 100%;
+  margin: 0% auto;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
+.form-container {
+  width: 60%;
+  margin: 3% auto 0%;
+}
+@media (max-width: 500px) {
+  .form-container {
+    width: 80%;
+    margin: 8% auto 0%;
+  }
+}
+.form-container .fieldset {
+  border: 0.2rem solid grey;
+}
+.form-container .fieldset .input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container .fieldset .input-container .text-input {
+  width: 80%;
+  margin: 1% 0%;
+  padding: 1% 0% 1% 1%;
+  border-radius: 1.8rem;
+  background-color: #ECE6DC;
+  box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+}
+@media (max-width: 500px) {
+  .form-container .fieldset .input-container .text-input {
+    margin: 3% 0%;
+  }
+}
+.form-container .fieldset .input-container .text-input::placeholder {
+  font-family: 'Permanent Marker';
+  font-size: 1.6rem;
+  color: grey;
+}
+.form-container .fieldset .input-container .message {
+  height: 15rem;
+}
+.form-container .fieldset .input-container .submit-btn {
+  width: 15%;
+  background-color: #ECE6DC;
+  box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
+  border-radius: 1.8rem;
+  position: relative;
+  top: 1.2rem;
+  font-family: 'Permanent Marker';
+}
+@media (max-width: 500px) {
+  .form-container .fieldset .input-container .submit-btn {
+    width: 20%;
+  }
+}
+.form-container .fieldset .title {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0% 2%;
+  border-top: 0.2rem solid grey;
+  border-radius: 1.5rem;
+  font-size: 2rem;
 }
 footer {
   margin-top: 5%;
