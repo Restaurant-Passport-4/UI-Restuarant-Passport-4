@@ -138,7 +138,7 @@ header {
   width: 60%;
   margin: 0% auto;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   header {
     width: 100%;
   }
@@ -147,12 +147,12 @@ header .hero-image-container {
   width: 40%;
   margin: 0% auto;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   header .hero-image-container {
     width: 100%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   header .header-txt-container {
     width: 85%;
     margin: 0% auto;
@@ -174,7 +174,7 @@ header .header-txt-container p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .people-container {
     margin: 8% auto 0%;
   }
@@ -190,6 +190,9 @@ header .header-txt-container p {
 .people-container .card .image-container {
   padding: 5%;
 }
+.people-container .card .image-container img {
+  width: 70%;
+}
 .people-container .card .name {
   margin-bottom: 5%;
 }
@@ -203,7 +206,7 @@ header .header-txt-container p {
 footer {
   margin-top: 5%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   footer {
     margin-top: 10%;
   }
