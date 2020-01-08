@@ -186,6 +186,9 @@ header .header-txt-container p {
   text-align: center;
   border: 0.1rem solid white;
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .people-container .card .image-container {
   padding: 5%;
