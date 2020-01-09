@@ -99,7 +99,7 @@ header {
 
 .main-content-text {
   display: flex;
-  height: 300px;
+  height: 250px;
   text-align: center;
   margin: 0% 10%;
 
@@ -115,7 +115,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 550px;
+    height: 500px;
     margin: 0% 10%;
 
     @media @phone {
@@ -159,6 +159,16 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10%;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10%;
+	}
+
+
     p {
         font-size: 1.3rem;
 
@@ -179,28 +189,30 @@ header {
 
 .sign-up {
     display: flex;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
     align-items: center;
     height: 300px;
     text-align: center;
-    color: white;
+    
 
     .sign-up-text {
         
         h1 {
         font-size: 3.5rem;
+        margin: 3% 0%;
         color: black;
         }
 
         h4 {
             font-size: 2rem;
+            margin: 3% 0%;
             color: black;
             }
     
     }
 
     .sign-up {
-    color: white;
     font-size: 3rem;
     padding: 16px 30px;
     text-align: center;
@@ -215,8 +227,23 @@ header {
     margin-top: 5%;
     cursor: pointer;
     }
-}
 
+    .sign-up:hover {
+        font-size: 3rem;
+        padding: 16px 30px;
+        text-align: center;
+        font-weight: bold;
+        width: 300px;
+        height: 90px;
+        color: rgb(255, 255, 255);
+        background: rgb(84, 54, 3);
+        box-sizing: border-box;
+        box-shadow: rgba(255, 248, 237, 0.85);
+        border-radius: 20px;
+        margin-top: 5%;
+        cursor: pointer;
+        }
+}
 
 
 
@@ -230,7 +257,7 @@ footer {
 	}
 
 	p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 190%;
 	}
 }
