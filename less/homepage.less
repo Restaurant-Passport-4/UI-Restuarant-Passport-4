@@ -72,6 +72,11 @@ header {
             margin-left: auto;
             margin-right: auto;
             bottom: 450px;
+
+            @media @phone {
+                width: 50%;
+                bottom: 300px;
+            }
         }
     }
 
@@ -83,6 +88,12 @@ header {
         text-align: center;
         font-size: 4.5rem;
         margin-bottom: 30px;
+
+        @media @phone {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -91,6 +102,7 @@ header {
   height: 300px;
   text-align: center;
   margin: 0% 10%;
+
   
   p {
     font-size: 1.4rem;
@@ -105,10 +117,21 @@ header {
     align-items: center;
     height: 550px;
     margin: 0% 10%;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        text-align: center;
+        margin: 0% 5%;
+    }
     
     h2 {
         font-size: 2.5rem;
-        
+        @media @phone {
+            font-size: 2rem;
+    }
+    
     }
     p{
         font-size: 1.4rem;
@@ -117,6 +140,10 @@ header {
 
     .phone-image {
         width: 50%;
+        @media @phone {
+            margin: 10% 0%;
+            
+    }
     }
 
     .text {
@@ -135,6 +162,18 @@ header {
     p {
         font-size: 1.3rem;
 
+    }
+
+    .person-a {
+        text-align: center;
+    }
+
+    .person-b {
+        text-align: center;
+    }
+
+    .person-c {
+        text-align: center;
     }
 }
 
@@ -191,7 +230,7 @@ footer {
 	}
 
 	p {
-        font-size: 3rem;
+        font-size: 1.2rem;
         line-height: 190%;
 	}
 }
