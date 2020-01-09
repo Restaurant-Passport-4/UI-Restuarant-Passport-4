@@ -4,6 +4,7 @@
 */
 @import 'variables';
 @import 'mixins';
+@import 'index';
 
 
 html, body, div, span, applet, object, iframe,
@@ -31,31 +32,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-
 
 * {
 	max-width: 100%;
 }
 
+
 html {
 	font-size: 62.5%;
 	font-family: 'Permanent Marker';
-	background-color: @bg-color;
+    background-color: @bg-color;
 }
 
-p {
-    font-size: 3rem;
-    font-family: 'Permanent Marker';
+.container {
+    max-width: 1200px;
+    margin: 0% auto;
 }
-
 
 header {
-
-	margin: 0% auto;
-	@media @phone {
+	
+    
+    @media @phone {
 		width: 100%;
 	}
     
@@ -70,12 +67,121 @@ header {
 
         .homepage-logo {
             position: relative;
-            z-index: -1;
+            z-index: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 450px;
         }
     }
 
 
 }
+
+.main-content-middle {
+    h1 {
+        text-align: center;
+        font-size: 4.5rem;
+        margin-bottom: 30px;
+    }
+}
+
+.main-content-text {
+  display: flex;
+  height: 300px;
+  text-align: center;
+  margin: 0% 10%;
+  
+  p {
+    font-size: 1.4rem;
+    line-height: 190%;
+  }
+}
+
+
+.main-content-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    margin: 0% 10%;
+    
+    h2 {
+        font-size: 2.5rem;
+        
+    }
+    p{
+        font-size: 1.4rem;
+        line-height: 190%;
+    }
+
+    .phone-image {
+        width: 50%;
+    }
+
+    .text {
+        max-width: 500px;
+        margin: 0% 5%;
+    }
+}
+
+
+.main-content-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+    p {
+        font-size: 1.3rem;
+
+    }
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    color: white;
+
+    .sign-up-text {
+        
+        h1 {
+        font-size: 3.5rem;
+        color: black;
+        }
+
+        h4 {
+            font-size: 2rem;
+            color: black;
+            }
+    
+    }
+
+    .sign-up {
+    color: white;
+    font-size: 3rem;
+    padding: 16px 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    height: 90px;
+    color: black;
+    background: #ECE6DC;
+    box-sizing: border-box;
+    box-shadow: rgba(255, 248, 237, 0.85);
+    border-radius: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+    }
+}
+
+
+
+
+
 
 
 footer {
@@ -85,7 +191,7 @@ footer {
 	}
 
 	p {
-		.center-and-size(1.6rem);
-		margin-bottom: 3%;
+        font-size: 3rem;
+        line-height: 190%;
 	}
 }

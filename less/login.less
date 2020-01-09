@@ -69,64 +69,6 @@ header {
 
 }
 
-.form-container {
-	width: 60%;
-	margin: 3% auto 0%;
-	@media @phone {
-		width: 80%;
-		margin: 8% auto 0%;
-	}
-
-	.fieldset {
-		border: 0.2rem solid grey;
-	
-		.input-container {
-			.column-center-flex();
-	
-			.text-input {
-				width: 80%;
-				margin: 1% 0%;
-				padding: 1% 0% 1% 1%;
-				border-radius: 1.8rem;
-				background-color: @bg-color;
-				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
-				@media @phone {
-					margin: 3% 0%;
-				}
-			}
-			.text-input::placeholder {
-				font-family: 'Permanent Marker';
-				font-size: 1.6rem;
-				color: grey;
-			}
-
-			.message {
-				height: 15rem;
-			}
-
-			.submit-btn {
-				width: 15%;
-				background-color: @bg-color;
-				box-shadow: 0rem 0rem 0.7rem 0.1rem grey;
-				border-radius: 1.8rem;
-				position: relative;
-				top: 1.2rem;
-				font-family: 'Permanent Marker';
-				@media @phone {
-					width: 20%;
-				}
-			}
-		}
-	
-		.title {
-			.center-and-size(2.2rem);
-			padding: 0% 2%;
-			border-top: 0.2rem solid grey;
-			border-radius: 1.5rem;
-			font-size: 2rem;
-		}
-	}
-}
 
 footer {
 	margin-top: 5%;
@@ -135,7 +77,7 @@ footer {
 	}
 
 	p {
-		.center-and-size(1.6rem);
-		margin-bottom: 3%;
+        font-size: 3rem;
+        line-height: 190%;
 	}
 }
